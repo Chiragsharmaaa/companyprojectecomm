@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap"
+    />
+    <link rel="stylesheet" href="../assets/css/Features-Cards-icons.css" />
+    <link rel="stylesheet" href="../assets/css/orderhistory.css" />
+    <link rel="stylesheet" href="../assets/css/Responsive-UI-Card.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+   <!-- <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap"
+  /> -->
+
+  <!-- <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;display=swap"
+  /> -->
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="./index.html"><span>EClothing</span></a>
+        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1" style="margin-left: 120px; margin-right: 120px">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html" style="margin-right: 18px; margin-left: 120px">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./services.html" style="margin-right: 30px; padding-right: 0px; margin-left: 8px; padding-bottom: 0px">AboutUs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacts.html">ContactUs</a>
+            </li>
+            <li class="nav-item">
+              <button class="cart-holder">CART</button>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <a id="orderhistory" href="../html/orders.html" class="btn btn-outline-dark btn-sm me-5" type="button">
+              ORDER HISTORY
+            </a>
+            <a href="#" id="user" ><i class="bi bi-person-fill me-3" style="font-size: 1.5rem;"></i></a>
+            <a href="#" id="menu" role="button"><i class="bi bi-list me-3" style="font-size: 1.5rem;"></i></a>
+            <a href="#" role="button" id="logout" href="../html/login.html" type="submit"><i style="font-size: 1.5rem; color: red;" class="bi bi-box-arrow-right" style="font-size: 1.5rem;"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="bg-primary-gradient">
+      <div class="container pt-4 pt-xl-5 ps-lg-0">
+        <div
+          class="row pt-5"
+          style="
+            margin-bottom: 0px;
+            margin-top: 31px;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+          "
+        >
+          <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
+            <div class="text-center">
+              <h1 class="fw-bold">STYLISH PICKS BEAT THE HEAT!</h1>
+            </div>
+          </div>
+          <div class="col-12 col-lg-12 mx-auto">
+            <div
+              class="position-relative"
+              style="display: flex; flex-wrap: wrap; justify-content: flex-end"
+            >
+              <div
+                style="
+                  position: relative;
+                  flex: 0 0 45%;
+                  transform: translate3d(-15%, 35%, 0);
+                "
+              >
+                <img
+                  class="img-fluid"
+                  data-bss-parallax=""
+                  data-bss-parallax-speed="0.8"
+                  src="../assets/img/products/3.jpg"
+                />
+              </div>
+              <div
+                style="
+                  position: relative;
+                  flex: 0 0 45%;
+                  transform: translate3d(-5%, 20%, 0);
+                "
+              >
+                <img
+                  class="img-fluid"
+                  data-bss-parallax=""
+                  data-bss-parallax-speed="0.4"
+                  src="../assets/img/products/2.jpg"
+                />
+              </div>
+              <div
+                style="
+                  position: relative;
+                  flex: 0 0 60%;
+                  transform: translate3d(0, 0%, 0);
+                "
+              >
+                <img
+                  class="img-fluid mb-5"
+                  data-bss-parallax=""
+                  data-bss-parallax-speed="0.25"
+                  src="../assets/img/products/1.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="py-5"></section>
+
+    <!-- cart -->
+    <section id="cart" class="container content-section">
+      <h2 class="section-header"></h2>
+      <button class="cancel">X</button>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="total-value">Total</strong>
+        <span id="total-value" class="cart-total-price">$0</span>
+      </div>
+      <button class="purchase-btn" type="button">PURCHASE</button>
+    </section>
+    
+    <section style="margin-top: 26px">
+
+        <div
+          class="py-5 p-lg-5"
+          style="
+            padding-bottom: 0px;
+            margin-bottom: 6px;
+            padding-top: 100px;
+            margin-top: -96px;
+          "
+        >
+          <div class="row" style="padding-top: 0px; ">
+            <div class="col-md-8 col-xl-6 text-center mx-auto">
+              <h3 class="fw-bold">DISCOVER NEW ARRIVALS</h3>
+              <p class="fw-bold text-success mb-2">Recently added shirts!</p>
+            </div>
+          </div>
+        </div>
+        <div class="container" id="productcont">
+          <div class="row shop-items" id="shopitems"></div>
+            <div id="pagination" class="pagination"></div>
+          </div>
+        <div
+          class="py-5 p-lg-5"
+          style="
+            padding-bottom: 0px;
+            padding-top: 0px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+          "
+        >
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-6 col-lg-4">
+            <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="../assets/img/avatar1.jpg" />
+                <div class="card-body info">
+                    <h4 class="card-title">Shades</h4>
+                    <p class="card-text">Shop the Latest Trends with Our Fashionable Collection!</p>
+                    <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="../assets/img/avatar2.jpg" />
+                <div class="card-body info">
+                    <h4 class="card-title">Aparrels</h4>
+                    <p class="card-text">Stay cool and stylish this summer with our latest collection!</p>
+                    <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+            <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="../assets/img/avatar3.jpg" />
+                <div class="card-body info">
+                    <h4 class="card-title">Outerwears</h4>
+                    <p class="card-text">Get ready for a rolling out with our glamorous party dresses!</p>
+                    <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        
+      </div>
+      
+    </section>
+    <section>
+      
+    </section>
+    <section id="services" style="top:20px">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-12 text-center">
+            <h2 class="text-uppercase section-heading">Services</h2>
+            <h3 class="text-muted section-subheading">
+              Lorem ipsum dolor sit amet consectetur
+            </h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x"
+              ><i class="fa fa-circle fa-stack-2x text-primary"></i
+              ><i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i
+            ></span>
+            <h4 class="section-heading">FREE SHIPPING</h4>
+            <p class="text-muted">
+              Enjoy free shipping on all orders above $100
+            </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x"
+              ><i class="fa fa-circle fa-stack-2x text-primary"></i
+              ><i class="fa fa-laptop fa-stack-1x fa-inverse"></i
+            ></span>
+            <h4 class="section-heading">SUPPORT 24/7</h4>
+            <p class="text-muted">
+              Our support team is there to help you for queries
+            </p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x"
+              ><i class="fa fa-circle fa-stack-2x text-primary"></i
+              ><i class="fa fa-lock fa-stack-1x fa-inverse"></i
+            ></span>
+            <h4 class="section-heading">30 DAYS RETURN</h4>
+            <p class="text-muted">
+              Simply return it within 30 days for an exchange.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+ <section>
+
+ </section>
+    <section>
+      <div
+        class="container py-5"
+        style="margin-bottom: 40px; margin-top: 0px"
+      >
+      <div class="row" style="margin-top: 1px; padding-top: 0px; margin-bottom:30px">
+        <div class="col-md-8 bottom-5 col-xl-6 text-center mx-auto">
+          <h3 class="fw-bold">TOP SELLERS</h3>
+          <p class="fw-bold text-success mb-2">
+            Browse our top-selling products
+          </p>
+        </div>
+      </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="blog-card blog-card-blog">
+                <div class="blog-card-image">
+                  <a href="#">
+                    <img class="img" src="../assets/img/big_sean.png" />
+                  </a>
+                  <div class="ripple-cont"></div>
+                </div>
+                <div class="blog-table">
+                  <h4 class="blog-card-caption">
+                    <a href="#">Red Shirt</a>
+                  </h4>
+                  <p class="blog-card-description">$69.00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="blog-card blog-card-blog">
+                <div class="blog-card-image">
+                  <a href="#">
+                    <img class="img" src="../assets/img/big_sean.png" />
+                  </a>
+                  <div class="ripple-cont"></div>
+                </div>
+                <div class="blog-table">
+                  <h4 class="blog-card-caption">
+                    <a href="#">Gray Polo Shirt</a>
+                  </h4>
+                  <p class="blog-card-description">$49.00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="blog-card blog-card-blog">
+                <div class="blog-card-image">
+                  <a href="#">
+                    <img class="img" src="../assets/img/big_sean.png" />
+                  </a>
+                  <div class="ripple-cont"></div>
+                </div>
+                <div class="blog-table">
+                  <h4 class="blog-card-caption">
+                    <a href="#">Polo White Shirt</a>
+                  </h4>
+                  <p class="blog-card-description">$69.00</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+      <div id="shopnow" class="container py-4 py-xl-5" style="margin-top: -72px">
+        <button
+          class="btn btn-primary"
+          type="button"
+          style="
+            padding-right: 30px;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            margin-top: 22px;
+            margin-bottom: 16px;
+          "
+        >
+          SHOP NOW
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-primary-light">
+      <div class="container py-4 py-lg-5" style="margin-top: -22px">
+        <div class="row justify-content-center">
+          <div
+            class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item"
+          >
+            <h3 class="fs-6 fw-bold">Company Info</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Latest Post</a></li>
+              <li>Contact Us</li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item"
+          >
+            <h3 class="fs-6 fw-bold">HELP LINKS</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Tracking</a></li>
+              <li>Order Status</li>
+              <li>Delivery</li>
+              <li>Shipping Info</li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item"
+          >
+            <h3 class="fs-6 fw-bold">USEFUL LINKS</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Special Offers</a></li>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Advertising</a></li>
+              <li><a href="#">Terms of Use</a></li>
+            </ul>
+          </div>
+
+          </div>
+        </div>
+        <hr />
+        <div
+          class="text-muted d-flex justify-content-between align-items-center"
+        >
+          <p class="mb-0">© Explore Clothing</p>
+          <p class="mb-0">Privacy Terms &amp;&nbsp; Conditions</p>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"
+    integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="../js/index.js"></script>
+  </body>
+</html>
