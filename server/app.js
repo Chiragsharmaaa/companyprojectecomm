@@ -22,24 +22,12 @@ app.use(cors());
 app.use(helmet());
 dotenv.config();
 
-const adminRoutes = require("./routes/admin");
 const shopRoutes = require("./routes/shop");
 const userRoutes = require("./routes/user");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, "public")));
 
-app.use((req, res, next) => {
-  User.findByPk(1)
-    .then((user) => {
-      req.user = user;
-      next();
-    })
-    .catch((err) => console.log(err));
-});
-
-// app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 app.use('/user', userRoutes);
 app.use(errorController.get404);
@@ -61,22 +49,9 @@ Order.belongsToMany(Product, { through: OrderItem });
 Product.belongsToMany(Order, { through: OrderItem });
 
 sequelize
-  // .sync({ force: true })
+  // .sync({ force: true }) //use this to reset db.
   .sync()
-  // .then((result) => {
-  //   return User.findByPk(1);
-  //   // console.log(result);
-  // })
-  // .then((user) => {
-  //   if (!user) {
-  //     return User.create();
-  //   }
-  //   return user;
-  // })
-  // .then((user) => {
-  //   // console.log(user);
-  //   return user.createCart();
-  // })
+
   .then(() => {
     app.listen(process.env.PORT);
   })
